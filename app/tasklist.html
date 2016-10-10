@@ -1,0 +1,15 @@
+<head>
+  <title>tasklist</title>
+</head>
+<body>
+<h1>Welcome to Meteor</h1>
+{{> tasks}}
+</body>
+
+<template name="tasks">
+  <ul>
+    {{#each tasks}}
+    <li>{{name}}</li>
+    {{/each}}
+  </ul>
+</template>
